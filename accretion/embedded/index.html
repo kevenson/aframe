@@ -4,6 +4,8 @@
     <title>A-Frame Examples</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../../dist/aframe-master.js"></script>
+
     <style>
       html {
         font-size: 14px;
@@ -204,49 +206,33 @@
       overflow: hidden;
       position: relative;
 }
-
+    a-scene {
+      height: 300px;
+      width: 600px;
+    }
 
   </style>
   </head>
   <body>
     <header class="header">
-      <h1>Accretion Systems w/ A-Frame</h1>
+      <h1>Accretion Systems w/ A-Frame (mobile beta)</h1>
     </header>
 
     <hr>
+    <div id="embedded_scene">
+      <a-scene embedded>
+        <a-sky src="../360-image/1_14/1_14.jpg" rotation="0 -207 0"></a-sky>
+      </a-scene>
+    </div>
 
+  <!--
   <div class="thumbnail-container">
      <div class="thumbnail">
-        <iframe src="360-image/1_14/fullscreen" allowfullscreen="yes" allowvr="yes" frameborder="0"></iframe>
-        <p><a href="360-image/1_14/fullscreen">View fullscreen (VR ready)</a>
+        <iframe src="../360-image/1_14/fullscreen/" frameborder="0"></iframe>
       </div>
   </div>
-      <div class="thumbnail-container">
-     <div class="thumbnail">
-        <iframe src="360-image/2_15/fullscreen"  allowfullscreen="yes" allowvr="yes" frameborder="0"></iframe>
-        <p><a href="360-image/2_15/fullscreen">View fullscreen (VR ready)</a>
-      </div>
-  </div>
-    <div class="thumbnail-container">
-     <div class="thumbnail">
-        <iframe src="360-image/1_18/fullscreen"  allowfullscreen="yes" allowvr="yes" frameborder="0"></iframe>
-        <p><a href="360-image/1_18/fullscreen">View fullscreen (VR ready)</a>
-      </div>
-  </div>
-    <div class="thumbnail-container">
-     <div class="thumbnail">
-        <iframe src="360-image/1_19/fullscreen" allowfullscreen="yes" allowvr="yes" frameborder="0"></iframe>
-        <p><a href="360-image/1_19/fullscreen">View fullscreen (VR ready)</a>
-      </div>
-  </div>
-
-  <!--  ORIG
-  <div class="thumbnail-container">
-     <div class="thumbnail">
-        <iframe src="360-image/1_14/" frameborder="0"></iframe>
-        <p><a href="360-image/1_14/fullscreen">View fullscreen (VR ready)</a>
-      </div>
-  </div>
+  -->
+  <!--
       <div class="thumbnail-container">
      <div class="thumbnail">
         <iframe src="360-image/2_15/" frameborder="0"></iframe>
@@ -265,8 +251,7 @@
         <p><a href="360-image/1_19/fullscreen">View fullscreen (VR ready)</a>
       </div>
   </div>
-  -->
-
+ -->
   </body>
 </html>
 
