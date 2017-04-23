@@ -204,7 +204,10 @@
       overflow: hidden;
       position: relative;
 }
-
+    a-scene {
+      height: 300px;
+      width: 600px;
+    }
 
   </style>
   </head>
@@ -214,12 +217,17 @@
     </header>
 
     <hr>
+    <a-scene embedded>
+      <a-sky src="../1_14.jpg" rotation="0 -207 0"></a-sky>
+    </a-scene>
+
+  <!--
   <div class="thumbnail-container">
      <div class="thumbnail">
-        <iframe src="../360-image/1_14/" frameborder="0"></iframe>
-        <p><a href="../360-image/1_14/fullscreen">View fullscreen (VR ready)</a>
+        <iframe src="../360-image/1_14/fullscreen/" frameborder="0"></iframe>
       </div>
   </div>
+  -->
   <!--
       <div class="thumbnail-container">
      <div class="thumbnail">
